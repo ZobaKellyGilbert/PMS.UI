@@ -6,6 +6,9 @@ import { AdminComponent } from './admin/admin.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { IndexComponent } from './index/index.component';
 import { RouteModule } from './Routes/route.module';
+import { NavbarComponent } from './index/navbar/navbar.component';
+import { HeaderComponent } from './index/header/header.component';
+import { ReviewsComponent } from './index/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { RouteModule } from './Routes/route.module';
     AdminComponent,
     NotfoundComponent,
     IndexComponent,
+    NavbarComponent,
+    HeaderComponent,
+    ReviewsComponent,
   ],
   imports: [BrowserModule, RouteModule],
   providers: [],
