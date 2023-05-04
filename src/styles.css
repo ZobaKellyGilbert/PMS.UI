@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('assets/css/common');
 
 :root {
   --pms-misty-blue: #2f5061;
