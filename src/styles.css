@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('assets/css/common');
+
+:root {
+  --pms-misty-blue: #2f5061;
+  --pms-coral: #357f84;
+  --pms-teal: #4297a0;
+  --pms-white: #ffff;
+  --pms-ivory: #fffff0;
+  --font_Sofia: "Sofia", sans-serif;
+  --font_Proxima-Nova: "Proxima Nova", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--pms-ivory);
+  overflow-x: hidden;
+}
+
+.pms-bg {
+  background: var(--pms-misty-blue);
+}
+
+.pms-coral {
+  background: var(--pms-coral);
+}
+
+.pms-ivory {
+  background-color: var(--pms-ivory);
+}
+
+.pms-ivory-color {
+  color: var(--pms-ivory);
+}
+.pms-misty-blue {
+  background-color: var(--pms-misty-blue);
+}
+
+.pms-teal {
+  background-color: var(--pms-teal);
+}
+
+.pms-teal-color {
+  color: var(--pms-teal);
+}
+
+.pms-coral-color {
+  color: var(--pms-coral);
+}

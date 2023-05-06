@@ -1,0 +1,10 @@
+button
+{
+    
+    display:flex;
+    justify-content: center;
+    width:30%;
+    margin: 10px auto;
+    text-align: center;
+}
+
