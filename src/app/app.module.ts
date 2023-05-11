@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import{HttpClientModule} from "@angular/common/http";
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -14,6 +13,14 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavbarComponent } from './index/navbar/navbar.component';
 import { HeaderComponent } from './index/header/header.component';
 import { ReviewsComponent } from './index/reviews/reviews.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { PropertiesComponent } from './components/properties/properties.component';
+import { ViewPropertiesComponent } from './components/view-properties/view-properties.component';
+import { FormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { JwtTokenInterceptor } from 'src/Extension/request.interceptor';
+import { HeroComponent } from './components/hero/hero.component';
+
 
 @NgModule({
   declarations: [
@@ -23,13 +30,21 @@ import { ReviewsComponent } from './index/reviews/reviews.component';
     IndexComponent,
     LoginComponent,
     SignupComponent,
-    DashboardComponent
+    DashboardComponent,
     NavbarComponent,
     HeaderComponent,
     ReviewsComponent,
+    FooterComponent,
+    PropertiesComponent,
+    ViewPropertiesComponent,
+    HeroComponent,
   ],
-  imports: [BrowserModule, RouteModule,ReactiveFormsModule,HttpClientModule],
-  providers: [],
+  imports: [BrowserModule, RouteModule,ReactiveFormsModule,HttpClientModule,FormsModule],
+  providers: [  {
+    provide: HTTP_INTERCEPTORS,
+    useClass: JwtTokenInterceptor,
+    multi: true,
+  },],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

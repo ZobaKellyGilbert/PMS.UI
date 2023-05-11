@@ -1,17 +1,94 @@
-<div class="w-[100vw] pms-header flex flex-col h-[80vh] items-center">
-    <div class="flex flex-col h-[70%] w-[100%] md:w-[50%] absolute m-auto bg-black justify-evenly mt-16 opacity-10">
-    </div>
-    <div class="flex flex-col h-[70%] w-[100%] md:w-[50%] items-center justify-evenly mt-16">
-        <div class="items-center flex flex-col text-center w-[100%] mt-6 z-30">
-            <h1 class="text-white text-[1.3rem] md:text-[2rem] text-center font-bold uppercase"> We are here to help you
-                get
-                valuable properties to
-                live!.</h1>
+
+
+<section class="about_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="section-title">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+              desktop publishing packages and web page editors now use Lorem Ipsum as their
+            </p>
+            <a href="">
+              Get Started
+            </a>
+          </div>
         </div>
-        <div class="items-center flex h-[3rem] w-[100%] pms-coral rounded-sm z-30 justify-evenly m-auto">
-            <h1 class="text-xlg text-white font-bold">See Our Available Properties | <a routerLink="/properties"
-                    class="text-bold text-xlg pms-teal-color text-center bg-white p-3 rounded-sm">=></a></h1>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="../assets/images/about-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section  class="contact section-bg">
+    <div class="container">
+            <div class="section-title">
+              <h2>
+                Contact Us
+              </h2>
+            </div>
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="info-box">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <h3>Our Address</h3>
+                            <p>12b Cetenary , Enugu, Nigeria </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-box info-box1 mt-3">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <h3>Email Us</h3>
+                            <p>info@Tence.com<br>contact@Tenece.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-box info-box1 mt-3">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <h3>Call Us</h3>
+                            <p>+2347031653729<br>+2347039013194</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+                <form  role="form" class="email-form mt-2">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group mt-2">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+            </div>
 
         </div>
+
     </div>
-</div>
+</section><!-- End Contact Section -->
