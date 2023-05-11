@@ -1,0 +1,309 @@
+
+  .review_section{
+    padding: 20px 0;
+    margin:10px 0 0px 0;
+  }
+  .slider_section #carouselIndicators {
+    width: 100%;
+  }
+  
+  .slider_section .carousel-indicators {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #ffffff;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    left: initial;
+    width: 25px;
+    height: 200%;
+    margin: 0;
+    bottom: 65%;
+    right: 45px;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  
+  .slider_section .custom_carousel-control {
+    display:flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -85px;
+    right: 20px;
+    width: 100px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); 
+  }
+  
+  .slider_section .custom_carousel-control .carousel-control-prev,
+  .slider_section .custom_carousel-control .carousel-control-next {
+    margin: 12px 0;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border: none;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: center;
+    background-color: #e8e8e8;
+    color:#2f5061;
+  
+  }
+  .slider_section .custom_carousel-control .carousel-control-prev:hover,
+  .slider_section .custom_carousel-control .carousel-control-next:hover {
+    background-color:#2f5061;
+  }
+  
+ 
+  .body_bg {
+    background-image: url(/src/assets/images/body_bg.jpg);
+    background-size: cover;
+  }
+  
+  .service_section .heading_container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+
+  @media (max-width: 1120px) {}
+
+@media (max-width: 992px) {
+    .hero_area {
+        height: auto;
+    }
+
+    .slider_section {
+        padding-top: 45px;
+        padding-bottom: 75px;
+    }
+
+    .custom_nav-container .nav_search-btn {
+        background-position: center;
+    }
+
+    .slider_section {
+        background-size: cover;
+        background-position: left;
+    }
+
+    .slider_section .carousel-indicators {
+
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .slider_section .detail-box {
+        text-align: center;
+    }
+
+    .slider_section .carousel-indicators {
+        display: none;
+    }
+
+    .slider_section .custom_carousel-control {
+
+        display: none;
+    }
+
+    .about_section .img-box {
+        margin-top: 35px;
+    }
+
+    .service_section .box {
+        width: 100%;
+    }
+
+
+    .quote_section .box {
+
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .client_section .box {
+        width: 100%;
+    }
+
+    .client_section .client_container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    
+}
+
+@media (max-width: 480px) {
+    .info_section .footer_contact {
+        width: 315px;
+    }
+}
+
+@media (max-width: 400px) {}
+
+@media (max-width: 360px) {}
+
+
+
+
+
+
+
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.carousel {
+	margin: 50px auto;
+}
+.carousel .item {
+	color: #999;
+	overflow: hidden;
+    min-height: 120px;
+	font-size: 13px;
+}
+.carousel .media {
+	position: relative;
+	padding: 0 0 0 20px;
+	margin-left: 20px;
+} 
+.carousel .media img {
+	width: 75px;
+	height: 75px;
+	display: block;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border: 2px solid #fff;
+}
+.carousel .testimonial {
+    color: #fff;
+    position: relative;    
+    background: #2f5061;
+	padding: 25px;
+	margin: 0 0 20px 20px;
+}
+.carousel .testimonial::before, .carousel .testimonial::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+}
+.carousel .testimonial::before {
+    width: 20px;
+    height: 20px;
+	background:#2f5061;
+	box-shadow: inset 12px 0 13px rgba(0,0,0,0.5);
+}
+.carousel .testimonial::after {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+}
+.carousel .item .row > div:first-child .testimonial {
+	margin: 0 20px 20px 0;
+}
+.carousel .item .row > div:first-child .media {
+	margin-left: 0;
+}
+.carousel .testimonial p {
+	text-indent: 40px;
+    line-height: 21px;
+	margin: 0;
+}
+.carousel .testimonial p::before {
+	content: "\201D";
+  	font-family: Arial,sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+    position: absolute;
+    left: -25px;
+    top: 0;
+}
+.carousel .overview {
+	padding: 3px 0 0 15px;
+}
+.carousel .overview .details {
+	padding: 5px 0 8px;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #ff5555;
+}
+
+.slider_section.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    color: #2f5061;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+.slider_section.carousel-control-next{
+    right:0;
+}
+.slider_section.carousel-control-next, .carousel-control-prev {
+	position:absolute;
+    bottom:0;
+    z-index:1;
+    display:flex;
+    align-items: center;
+    width:15%;
+    text-align: center;
+    opacity: .5;
+    transition:opacity .15s ease;
+
+	right: 10px;
+}
+
+
+.slider_section.carousel-control a{
+    background-color: transparent;
+}
+.carousel-indicators {
+	top: 110%;
+    position: absolute;
+    right:0;
+    z-index: 15;
+    display: flex;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+
+}
+
+.carousel-indicators li {	
+    box-sizing: border-box;
+   
+    flex:0 1 auto;
+    width:30px;
+    height: 25px;
+    margin-right:3px;
+    margin-left:3px;
+    text-indent: -999px;
+    cursor:pointer;
+    background:#2f5061;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-top: 10px solid transparent;
+    transition: opacity .6s ease;
+
+}
+.carousel-indicators li.active {
+	
+    opacity:1; 
+}
+
+

@@ -1,0 +1,20 @@
+
+<section>
+<div class="title">
+  <h4>All Best Selling Properties</h4>
+  <div class="view-all">View All</div>
+</div>
+      <div class="content" role="main">
+          <div class="card-container">
+          <div class="property" *ngFor="let prop of properties">
+            <div class="card card-small">
+            <a [routerLink]="['/properties', prop.propertyId]">
+            <div class="cover">
+                <img [src]="prop.image" [alt]="prop.name" />
+              </div></a>
+            <div class="detail">
+            <div class="name">{{ prop.name }}</div>
+        </div>
+      </div></div></div>
+    </div></section>
+  
