@@ -10,7 +10,7 @@
 # About
 --------------------------------------------------------------*/
  
-  .about_section .img-box {
+  /* .about_section .img-box {
     margin-top: 35px;
 }
   .about_section .img-box img {
@@ -35,7 +35,7 @@
     background-color: transparent;
     border-color: #2f5061; 
     color: #2f5061;
-  }
+  } */
 
 
   /*--------------------------------------------------------------
@@ -91,7 +91,7 @@
 
       .contact .email-form input:focus,
       .contact .email-form textarea:focus {
-          border-color: #2f5061;
+          border-color:  #353b48;
       }
 
   .contact .email-form input {
@@ -104,7 +104,7 @@
   }
 
   .contact .email-form button[type=submit] {
-      background: #2f5061;
+      background:  #353b48;
       border: 0;
       padding: 10px 30px;
       border-radius: 4px;
@@ -118,4 +118,106 @@
 
 
 
-      
+      /*--------------------------------------------------------------
+# about Section
+--------------------------------------------------------------*/
+#about {
+  width: 100%;
+ height: 80vh;
+  background:  #353b48;
+}
+
+#about .container {
+  padding-top: 72px;
+}
+#about .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #fff;
+}
+
+ #about .section-title h2::after {
+
+  background: #fff;
+ 
+}
+
+#about p {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+
+#about .btn-get-started {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px 0 10px 0;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#about .btn-get-started:hover {
+  color:  #353b48;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+
+/* #about .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+} */
+
+@media (max-width: 991px) {
+  #about {
+    height: 100vh;
+    text-align: center;
+  }
+
+  #about .animated {
+    animation: none;
+  }
+
+  #about .hero-img {
+    text-align: center;
+  }
+
+  #about .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #about h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+
+  #about .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #about .hero-img img {
+    width: 80%;
+  }
+
+  #about .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+    margin-bottom:60px;
+  }
+}

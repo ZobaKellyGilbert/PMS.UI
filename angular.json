@@ -21,9 +21,6 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.css"],
             "scripts": [
-
-              "src/assets/js/footer.js",
-              "src/assets/js/search.js"
             ]
           },
           "configurations": {

@@ -1,0 +1,25 @@
+.main-content {
+    margin-left:230px;
+    margin-top: 100px;
+    padding: 10px 18px;
+    transition: margin-left .5s;
+}
+@media screen and (max-width:500px) {
+
+    .menu 
+    {
+        display: block;
+    }
+    .sidebar{
+        display: none;
+        width: 160px;
+    }
+    .sidebar a{
+        padding: 10px 0px;
+    }
+    .main-content
+    {
+        margin-left: 0px;
+    }
+
+}

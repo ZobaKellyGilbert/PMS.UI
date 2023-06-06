@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+.footer{
+  width:100%;
+}
+
+a,
+              a:visited,
+              a:hover {
+                color:  #2f5061;
+                text-decoration: none;
+              }
+            
+            
+              
+            
+              .circle-link {
+                height: 40px;
+                width: 40px;
+                border-radius: 40px;
+                margin: 8px;
+                background-color: white;
+                border: 1px solid #eeeeee;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                transition: 1s ease-out;
+              }
+            
+              .circle-link:hover {
+                transform: translateY(-0.25rem);
+                box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+              }
+            
+              .copyright{
+                margin-top: 12px;
+                display: flex;
+                align-items: center;
+                line-height: 10px;
+              }
+            
+              .copyright a {
+                display: flex;
+                align-items: center;
+              }
+
+			  .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+              }
+              .content {
+                display: flex;
+                padding:15px  10px;
+                max-width:1300px;
+                flex-direction: column;
+                align-items: center;
+              }
+              .float-right {
+                float: right!important;
+            }
+
+            /* subscription */
+            .wrapper{
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom:10px;
+            }
+            
+            .contents {
+              width: 380px;
+              height: 40px;
+              box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+              border-radius: 60px;
+              overflow: hidden;
+            }
+            
+            .subscription {
+              position: relative;
+              width: 100%;
+              height: 100%;
+            }
+            
+            .subscription .add-email{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border: none;
+              outline: none;
+              padding: 0 20px;
+            }
+            
+            .subscription .submit-email {
+              position: absolute;
+              top: 0;
+              right: 0;
+              height: calc(100% - 2px);
+              width: 100px;
+              border: none;
+              border-radius: 60px;
+              outline: none;
+              margin: 1px;
+              padding: 0 20px;
+              cursor: pointer;
+              background: #2f4050;
+              color: #FFFFFF;
+              transition: width .35s ease-in-out,
+                background .35s ease-in-out;
+            }
+            
+            .subscription.done .submit-email {
+              width: calc(100% - 2px);
+              background: #2f5061;
+            }
+            
+            .subscription .submit-email .before-submit,
+            .subscription .submit-email .after-submit {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              line-height: 38px;
+              transition: visibility .35s ease-in-out,
+                opacity .35s ease-in-out;
+            }
+            
+            .subscription.done .submit-email .before-submit,
+            .subscription:not(.done) .submit-email .after-submit {
+              visibility: hidden;
+              opacity: 0;
+            }
+            
+            .subscription .submit-email .after-submit {
+              transition-delay: .35s;
+            }
+            
+            .subscription:not(.done) .submit-email .before-submit,
+            .subscription.done .submit-email .after-submit {
+              visibility: visible;
+              opacity: 1;
+            }
+
+            /*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #37517e;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #37517e;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+            /*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #47b2e4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color:red;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #6bc1e9;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}

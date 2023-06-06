@@ -6,7 +6,8 @@ declare function search(): any;
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent implements OnInit{
+export class NavbarComponent{
+ 
   ngOnInit(): void {
     search();
   }

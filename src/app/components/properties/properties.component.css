@@ -1,7 +1,7 @@
 .movie-container {
-    margin: 0 auto;
+    margin: 120px auto;
     max-width: 1400px;
-    padding:  20px 50px;
+    padding:  10px 50px;
 }
 .top{
     display: flex;
@@ -10,7 +10,7 @@
     width: 100%;
   }
 .column {
-  flex: 50%;
+  flex: 50% ;
 }
 @media (max-width: 700px) {
   .column {
@@ -30,7 +30,7 @@
        
         .cover {
           /* width: 500px !important;  */
-          height: 470px !important;
+          height: 400px !important;
           margin-right: 50px;
           border-radius: 0;
         }

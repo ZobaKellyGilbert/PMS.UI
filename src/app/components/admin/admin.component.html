@@ -1,0 +1,64 @@
+
+<div class="topnav shadow p-1">
+    <a routerLink="/home">Admin Dashboard</a>
+    <span class="menu" (click)="openNav(true)"><i class="fa fa-bars"></i></span>
+</div>
+
+
+
+<div  class="sidebar shadow p-2"  id="sidebar"  [ngStyle]="responsiveMenu">
+    <ul>
+        <li><a routerLink="/dashboard"><i class="fa fa-phone"></i>Dashboard</a></li>
+        <li><a routerLink="/testimonials"><i class="fa fa-envelope"></i>Tesimonials<i class="fa fa-arrow-down icon"></i></a>
+            <ul class="dropdow-container">
+                <li><a href="#">Add Testimonials</a></li>
+                <li><a href="#">Edit Testimonials</a></li>
+                <li><a href="#">Delete Testimonials</a></li>
+                <li><a href="#">Testimonials Details</a></li>
+            </ul>
+        
+        </li>
+        <li>
+            <a a routerLink="/admin/properties"><i class="fa fa-home"></i> Properties<i class="fa fa-arrow-down icon"></i></a>
+            <ul class="dropdow-container">
+                <li><a href="#">Add Properties</a></li>
+                <li><a href="#">Edit Properties</a></li>
+                <li><a href="#">Delete Properties</a></li>
+                <li><a href="#">Properties Details</a></li>
+            </ul>
+        </li>
+        <li>
+            <a routerLink="/leases"><i class="fa-fa-link"></i>Leases<i class="fa fa-arrow-down icon"></i></a>
+            <ul class="dropdow-container">
+                <li><a href="#">Add Lease</a></li>
+                <li><a href="#">Edit Lease</a></li>
+                <li><a href="#">Delete Lease</a></li>
+                <li><a href="#"> Lease Details</a></li>
+            </ul>
+        </li>
+        <li><a routerLink="/blog"><i class="fa fa-user"></i>Blog<i class="fa fa-arrow-down icon"></i></a>
+            <ul class="dropdow-container">
+                <li><a href="#">Add Blog</a></li>
+                <li><a href="#">Edit Blog</a></li>
+                <li><a href="#">Delete Blog</a></li>
+                <li><a href="#">Blog Details</a></li>
+            </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-arrow-left"></i> Logout</a></li>
+
+    </ul>
+</div>
+
+
+<!-- main content--> 
+
+<div class="main-content" [ngStyle]="responsiveContent">
+   
+</div>
+
+ <!-- <pms-header></pms-header> -->
+<!-- <pms-blog></pms-blog>
+<pms-properties></pms-properties> -->
+<!-- <pms-footer></pms-footer>  -->
+<router-outlet></router-outlet>
+ 

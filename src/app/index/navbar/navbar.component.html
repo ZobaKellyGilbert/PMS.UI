@@ -1,5 +1,5 @@
-
-<nav class="navbar navbar-expand-lg navbar-light shadow custom_nav-container p-3">
+<div id="header" class="fixed-top bg-white">
+<nav class="navbar navbar-expand-lg bg-white shadow custom_nav-container p-3">
   <div class="container">
   <a routerLink="/home" class="navbar-brand mr-5">
     <img src="../assets/images/logo.png" alt="">
@@ -7,7 +7,7 @@
 </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
+<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
 </button>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
@@ -17,7 +17,7 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
       class="nav-link">Home<span class="sr-only">(current)</span></a>
      </li>
      <li class="nav-item">
-      <a routerLink="/about" class="nav-link">About
+      <a routerLink="/admin" class="nav-link">About
       </a></li>
       <li class="nav-item">
       <a routerLink="/contact"
@@ -33,20 +33,18 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
                   Properties</a>
           </li>
   </ul>
-    <form class="form-inline">
+    <!-- <form class="form-inline parent d-flex justify-content-center h-100">
+      <input class="input" type="type" placeholder="Search..." />
       <button class="btn  my-2 my-sm-0 nav_search-btn" type="search">
          <i class="fa fa-search" aria-hidden="true"></i> 
       </button>
-    </form>
+    </form> -->
+    <div class="d-flex justify-content-center h-100 parent">
+      <div class="searchbar">
+      <input class="search_input" type="type" placeholder="Search..." />
+      <a href="" class="search_icon"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+    </div>
+  </div>
   </div>
 </div></div>
-</nav>
-
-<!-- <div class="parent">
-  <input class="input" type="type" placeholder="Search..." />
-
-<button class="btns">
-  <i class="fa fa-search text-success" aria-hidden="true"></i> 
-  </button>
-</div> -->
-
+</nav></div>

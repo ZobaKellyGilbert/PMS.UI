@@ -33,6 +33,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* .pms-bg {
   background: var(--pms-misty-blue);
 }
@@ -56,7 +57,7 @@ body {
   background-color: var(--pms-teal);
 }
 
-.pms-teal-color {
+.pms-font-color {
   color: var(--pms-teal);
 }
 
@@ -70,75 +71,65 @@ body {
   }
 }
 section {
-  padding: 50px 0;
+  /* padding: 60px 0; */
   margin:40px 0 0px;
+  overflow: hidden;
+  padding: 80px 0;
 }
 .section-bg {
-  background-color: #f6f9fd;
+  /* background-color: #f3f5fa; */
+  background-color: #f7f9fc;
 }
-.section-title  {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 50px;
+
+.section-title {
+  text-align: center;
+  padding-bottom: 20px;
 }
-.section-title  h2 {
+
+.section-title h2 {
+  font-size: 32px;
   font-weight: bold;
-  color: #ed502e;
-  padding: 3px 10px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #2f5061;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: coral;
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
 
-.home-container {
-  display: flex;
-}
-  .all-movies {
-    width: 100%;
-    min-height: calc(100vh - 80px);
-    padding: 20px;
-    font-family: "Roboto", sans-serif;
-  }
-    .top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 15px;
-    }
-    .top h4 {
-        text-transform: uppercase;
-        font-weight: bold;
-        border-left: 5px solid #342135;
-        padding-left: 10px;
-      }
-      .view-all {
-        color: #342135;
-        cursor: pointer;
-      }
-    .movies-thumbnail {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 60px;
-    }
-      .movie  .cover{
-          cursor: pointer;
-        }
-          img {
-            border-radius: 5px;
-          }
-        .detail {
-          width: 200px;
-        }
-          .name {
+          /* .name {
             font-weight: bold;
             height: 50px;
             margin-top: 5px;
             cursor: pointer;
-          }
-    .popular-movies 
+          } */
+    /* .popular-movies 
           img {
             border-radius: 5px;
             width:180px;
-          }
+          } */
         
           
             svg.material-icons {

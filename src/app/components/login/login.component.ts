@@ -41,7 +41,7 @@ this.auth.login(this.loginForm.value)
     console.log('Here there come', res)
     alert('Login successfully')
     this.loginForm.reset()
-    this.router.navigate(['dashboard']);
+    this.router.navigate(['admin']);
   }),
   error:(err)=>{
     alert(err?.error.message)

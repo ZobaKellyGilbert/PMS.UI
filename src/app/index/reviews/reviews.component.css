@@ -154,15 +154,6 @@
 
 
 
-
-
-
-
-
-body {
-	font-family: "Open Sans", sans-serif;
-}
-
 .carousel {
 	margin: 50px auto;
 }
@@ -307,3 +298,59 @@ body {
 }
 
 
+
+
+.parent {
+    position: relative;
+    }
+    
+    .input {
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 40px;
+    transition: width 0.3s ease;
+    background-color: red;
+    }
+    
+    .input::placeholder {
+    color: green;
+    }
+    
+    .parent.active .input {
+    height: 200px;
+    }
+    
+    .btn {
+    width: 40px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    background: green;
+    display: inline;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+    }
+    
+    .parent.active .btn {
+    transform: translateX(210px);
+    }
+  .fa-search {
+    color: #ffffff;
+  }
+  
+   #navbarSupportedContent .nav-item .nav-link{
+    color:#2f5061;
+  }
+  
+  .custom_nav-container .navbar-brand span{
+    color:#2f5061;
+  }
+
+
+ 
